@@ -31,7 +31,7 @@ Para publicar o site no GitHub Pages:
 
 1. No GitHub, vá até **Settings** > **Pages**.
 2. Em **Branch**, selecione `main` e clique em **Save**.
-3. O site ficará disponível em `https://github.com/ricardobarbosadev/Revita-site-em-construcao`.
+3. O site ficará disponível em `https://ricardobarbosadev.github.io/Revita-site-em-construcao/`.
 
 ## 📬 Contato
 
