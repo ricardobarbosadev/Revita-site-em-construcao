@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "@vercel/analytics": "^1.5.0"
-  }
+  },
+  "name": "revita-site-em-construcao",
+  "version": "1.0.0",
+  "description": "Este repositório contém um site simples para indicar que um projeto está em desenvolvimento. O design moderno inclui um vídeo de fundo desfocado e links para redes sociais.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardobarbosadev/Revita-site-em-construcao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardobarbosadev/Revita-site-em-construcao/issues"
+  },
+  "homepage": "https://github.com/ricardobarbosadev/Revita-site-em-construcao#readme"
 }
