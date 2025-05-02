@@ -20,14 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const whatsappLink = `https://wa.me/${phone}`;
 
   // Atualiza botão "Peça um Orçamento"
-  const cta = document.querySelector(".cta");
-  if (cta) {
+  const ctas = document.querySelectorAll(".cta");
+  ctas.forEach((cta) => {
     cta.setAttribute("href", whatsappLink);
-  }
+    console.log(phone);
+  });
 
   // Atualiza ícone do header
   const whatsappHeader = document.getElementById("whatsapp-header");
   if (whatsappHeader) {
     whatsappHeader.setAttribute("href", whatsappLink);
   }
+});
+
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu-container");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
 });
