@@ -51,11 +51,16 @@
 
     <!-- Header -->
     <header>
-      <div class="container">
+      <div class="container header-container">
         <a href="https://www.revita.pt/">
           <img src="./src/media/logos/9.png" alt="Revita Logo" class="logo" />
         </a>
-        <nav>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="menu-container">
           <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
@@ -124,7 +129,9 @@
             seus clientes e colaboradores. Na Revita, combinamos confiança,
             cuidado e resultados visíveis.
           </p>
-          <a href="#" class="cta">Peça um Orçamento Personalizado!</a>
+          <a href="https://wa.me/351910223276" class="cta"
+            >Peça um Orçamento Personalizado!</a
+          >
         </div>
         <div class="imagem">
           <img
@@ -137,76 +144,74 @@
 
     <!-- Serviços -->
     <section id="servicos" class="servicos">
-      <div class="servicos-conteudo container">
-        <div class="imagem">
-          <img
-            id="imagem-servico"
-            src="./src/media/img/limpeza_sofa.png"
-            alt="Limpeza de Estofados"
-          />
-        </div>
-
-        <div class="texto">
-          <h2>Nossos Serviços</h2>
-          <ul class="lista-servicos">
-            <li data-img="./src/media/img/limpeza_sofa.png">
-              <b>Limpeza de Estofados</b>
-              <p>
-                Cuidamos de
-                <b>sofás, cadeiras, poltronas e estofos automóveis</b>, em todos
-                os tipos de tecidos —
-                <b>do couro aos naturais mais delicados.</b> A limpeza
-                profissional não só remove manchas visíveis, como também
-                <b>elimina ácaros, bactérias e odores</b>, devolvendo frescura e
-                conforto ao seu espaço.
-              </p>
-            </li>
-
-            <li data-img="./src/media/img/Equipa_Revita.jpeg">
-              <b>Limpeza de Colchões</b>
-              <p>
-                O colchão é um dos locais onde passamos mais tempo e onde se
-                acumulam pó e ácaros. A nossa higienização profunda garante um
-                descanso mais <b>saudável</b>, livre de impurezas invisíveis que
-                comprometem o seu <b>bem-estar</b>.
-              </p>
-            </li>
-
-            <li data-img="./src/media/img/carpetes.jpg">
-              <b>Limpeza de Carpetes</b>
-              <p>
-                Carpetes acumulam poeira, germes e sujidade trazida do dia a
-                dia, sendo um risco acrescido para casas com crianças e animais.
-                A Revita devolve-lhes cor, vitalidade e sobretudo
-                <b>higiene</b>, deixando o ambiente
-                <b>mais seguro para toda a família</b>.
-              </p>
-            </li>
-
-            <li data-img="./src/media/img/impermeabilizacao.jpg">
-              <b>Impermeabilização</b>
-              <p>
-                Com a nossa <b>blindagem</b> profissional, os tecidos ficam
-                <b>protegidos</b> contra líquidos, nódoas e desgaste prematuro.
-                Uma camada invisível de proteção que preserva a
-                <b>elegância</b>, prolonga a vida útil dos estofados e facilita
-                a limpeza diária.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testemunhos -->
-    <section id="testemunhos" class="testemunhos">
       <div class="container">
-        <h2>O Que Nossos Clientes Dizem</h2>
-        <p>
-          ⭐⭐⭐⭐⭐ "Serviço impecável! Meu sofá ficou como novo." - João Silva
-        </p>
+        <div class="servicos-conteudo">
+          <!-- Imagem à esquerda -->
+          <div class="imagem">
+            <img
+              id="imagem-servico"
+              src="./src/media/img/limpeza_sofa.png"
+              alt="Limpeza de Estofados"
+            />
+            <a href="https://wa.me/351910223276" class="cta imagem-cta">Peça um Orçamento Personalizado!</a>
+          </div>
+
+          <!-- Conteúdo à direita -->
+          <div class="texto">
+            <h2>Nossos Serviços</h2>
+            <ul class="lista-servicos">
+              <li data-img="./src/media/img/limpeza_sofa.png">
+                <h3>Limpeza de Estofados</h3>
+                <p>
+                  Cuidamos de
+                  <b>sofás, cadeiras, poltronas e estofos automóveis</b>, em
+                  todos os tipos de tecidos —
+                  <b>do couro aos naturais mais delicados.</b> A limpeza
+                  profissional não só remove manchas visíveis, como também
+                  <b>elimina ácaros, bactérias e odores</b>, devolvendo frescura
+                  e conforto ao seu espaço.
+                </p>
+                
+          >
+              </li>
+
+              <li data-img="./src/media/img/colchao.jpg">
+                <h3>Limpeza de Colchões</h3>
+                <p>
+                  O colchão é um dos locais onde passamos mais tempo e onde se
+                  acumulam pó e ácaros. A nossa higienização profunda garante um
+                  descanso mais <b>saudável</b>, livre de impurezas invisíveis
+                  que comprometem o seu <b>bem-estar</b>.
+                </p>
+              </li>
+
+              <li data-img="./src/media/img/limpeza_tapete.jpeg">
+                <h3>Limpeza de Carpetes</h3
+                <p>
+                  Carpetes acumulam poeira, germes e sujidade trazida do dia a
+                  dia, sendo um risco acrescido para casas com crianças e
+                  animais. A Revita devolve-lhes cor, vitalidade e sobretudo
+                  <b>higiene</b>, deixando o ambiente
+                  <b>mais seguro para toda a família</b>.
+                </p>
+              </li>
+
+              <li data-img="./src/media/img/impermeabilizacao.png">
+                <h3>Impermeabilização</h3>
+                <p>
+                  Com a nossa <b>blindagem</b> profissional, os tecidos ficam
+                  <b>protegidos</b> contra líquidos, nódoas e desgaste
+                  prematuro. Uma camada invisível de proteção que preserva a
+                  <b>elegância</b>, prolonga a vida útil dos estofados e
+                  facilita a limpeza diária.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
+
 
     <!-- Contato -->
     <section id="contato" class="contato">
@@ -234,10 +239,6 @@
       &copy; <span id="year"></span> Revita. Todos os direitos reservados.
     </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
     <script src="./src/script.js"></script>
   </body>
 </html>
