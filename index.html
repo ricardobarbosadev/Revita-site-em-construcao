@@ -15,54 +15,84 @@
       })(window, document, "script", "dataLayer", "GTM-5TM8PR98");
     </script>
     <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Revita</title>
+    <title>Revita - Limpeza Profissional</title>
     <link rel="stylesheet" href="./src/style.css" />
     <link
       rel="shortcut icon"
       href="./src/media/favicon/1.png"
       type="image/x-icon"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/81ec08cc85.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "575986395441719");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=575986395441719&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
+  <script
+    src="https://kit.fontawesome.com/81ec08cc85.js"
+    crossorigin="anonymous"
+  ></script>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5TM8PR98"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header>
-      <div class="container">
-        <a href="https://www.revita.pt/"
-          ><img src="./src/media/logos/9.png" alt="Revita Logo" class="logo"
-        /></a>
-        <div class="menu-container">
-          <nav>
-            <ul>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#testemunhos">Testemunhos</a></li>
-              <li><a href="#contato">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-
+      <div class="container header-container">
+        <a href="https://www.revita.pt/">
+          <img src="./src/media/logos/9.png" alt="Revita Logo" class="logo" />
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="menu-container">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#testemunhos">Testemunhos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
         <div class="header-social-media">
           <a href="https://www.instagram.com/revita.pt/" target="_blank"
             ><i class="fab fa-instagram"></i
@@ -72,17 +102,17 @@
             target="_blank"
             ><i class="fab fa-facebook"></i
           ></a>
-          <a id="whatsapp-header" href="#" target="_blank"
+          <a href="https://wa.me/351910223276" target="_blank"
             ><i class="fab fa-whatsapp"></i
           ></a>
-          <a href="mailto:revita@revita.pt"><i class="fas fa-envelope"></i></a>
+          <a href="mailto:revita.estof@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
-        <button class="menu-toggle" aria-label="Abrir Menu">
-          <i class="fas fa-bars"></i>
-        </button>
       </div>
     </header>
 
+    <!-- Hero -->
     <section class="hero">
       <video autoplay muted loop class="background-video">
         <source
@@ -91,19 +121,13 @@
         />
       </video>
       <div class="overlay">
-        <h2>Renove e Proteja os Seus Estofados</h2>
-        <p>Serviço profissional de limpeza e impermeabilização de estofados.</p>
-        <a href="#" class="cta">Peça um Orçamento</a>
-        <a
-          target="_blank"
-          href="https://www.worten.pt/user/revitaestof-eff28145"
-          ><img
-            src="https://www.worten.pt/widget?user=2375097&widget=review"
-            alt=""
-        /></a>
+        <h2>Renove e Proteja os Seus Estofos</h2>
+        <p>Serviço profissional de limpeza para sofás, carpetes e estofados.</p>
+        <a href="https://wa.me/351910223276" class="cta">Peça um Orçamento</a>
       </div>
     </section>
 
+    <!-- Sobre -->
     <section id="sobre" class="sobre">
       <div class="container sobre-conteudo">
         <div class="texto">
@@ -130,7 +154,9 @@
             seus clientes e colaboradores. Na Revita, combinamos confiança,
             cuidado e resultados visíveis.
           </p>
-          <a href="#" class="cta">Peça um Orçamento Personalizado!</a>
+          <a href="https://wa.me/351910223276" class="cta"
+            >Peça um Orçamento Personalizado!</a
+          >
         </div>
         <div class="imagem">
           <img
@@ -141,23 +167,103 @@
       </div>
     </section>
 
+    <!-- Serviços -->
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <div class="servicos-conteudo">
+          <!-- Imagem à esquerda -->
+          <div class="imagem">
+            <img
+              id="imagem-servico"
+              src="./src/media/img/limpeza_sofa.png"
+              alt="Limpeza de Estofados"
+            />
+            <a href="https://wa.me/351910223276" class="cta imagem-cta">Peça um Orçamento Personalizado!</a>
+          </div>
+
+          <!-- Conteúdo à direita -->
+          <div class="texto">
+            <h2>Nossos Serviços</h2>
+            <ul class="lista-servicos">
+              <li data-img="./src/media/img/limpeza_sofa.png">
+                <h3>Limpeza de Estofados</h3>
+                <p>
+                  Cuidamos de
+                  <b>sofás, cadeiras, poltronas e estofos automóveis</b>, em
+                  todos os tipos de tecidos —
+                  <b>do couro aos naturais mais delicados.</b> A limpeza
+                  profissional não só remove manchas visíveis, como também
+                  <b>elimina ácaros, bactérias e odores</b>, devolvendo frescura
+                  e conforto ao seu espaço.
+                </p>
+                
+          >
+              </li>
+
+              <li data-img="./src/media/img/colchao.jpg">
+                <h3>Limpeza de Colchões</h3>
+                <p>
+                  O colchão é um dos locais onde passamos mais tempo e onde se
+                  acumulam pó e ácaros. A nossa higienização profunda garante um
+                  descanso mais <b>saudável</b>, livre de impurezas invisíveis
+                  que comprometem o seu <b>bem-estar</b>.
+                </p>
+              </li>
+
+              <li data-img="./src/media/img/limpeza_tapete.jpeg">
+                <h3>Limpeza de Carpetes</h3
+                <p>
+                  Carpetes acumulam poeira, germes e sujidade trazida do dia a
+                  dia, sendo um risco acrescido para casas com crianças e
+                  animais. A Revita devolve-lhes cor, vitalidade e sobretudo
+                  <b>higiene</b>, deixando o ambiente
+                  <b>mais seguro para toda a família</b>.
+                </p>
+              </li>
+
+              <li data-img="./src/media/img/impermeabilizacao.png">
+                <h3>Impermeabilização</h3>
+                <p>
+                  Com a nossa <b>blindagem</b> profissional, os tecidos ficam
+                  <b>protegidos</b> contra líquidos, nódoas e desgaste
+                  prematuro. Uma camada invisível de proteção que preserva a
+                  <b>elegância</b>, prolonga a vida útil dos estofados e
+                  facilita a limpeza diária.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através das redes sociais ou pelo email.</p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/revita.pt/" target="_blank"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=61566928716251"
+            target="_blank"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+          <a href="https://wa.me/351910223276" target="_blank"
+            ><i class="fab fa-whatsapp"></i> WhatsApp</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
       &copy; <span id="year"></span> Revita. Todos os direitos reservados.
     </footer>
-    <!-- Meta Pixel Code -->
-    <script src="/src/metapixel.js"></script>
-    <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=575986395441719&ev=PageView&noscript=1"
-      />
-    </noscript>
-    <!-- End Meta Pixel Code -->
 
-    <script defer src="/_vercel/insights/script.js"></script>
-
-    <script type="module" src="/src/script.js"></script>
+    <script src="./src/script.js"></script>
   </body>
 </html>
