@@ -294,7 +294,9 @@ section {
   transition: all 0.3s ease;
   position: relative;
 }
-
+#imagem-servico {
+  transition: opacity 0.3s ease;
+}
 /* Mantendo o sublinhado animado */
 .lista-servicos li::after {
   content: "";

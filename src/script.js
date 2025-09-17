@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ? item.querySelector("h3").textContent
         : "";
 
-      if (novaImagem && imagemServico.src !== novaImagem) {
+      if (novaImagem && !imagemServico.src.includes(novaImagem)) {
         // Aplica efeito fade out
         imagemServico.style.opacity = 0;
 
